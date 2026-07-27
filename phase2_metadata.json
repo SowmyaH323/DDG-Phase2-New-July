@@ -1,0 +1,36 @@
+{
+  "measurement_types": [
+    "thermal_stability"
+  ],
+  "chain_types": [
+    "0",
+    "1",
+    "A",
+    "B",
+    "E",
+    "H",
+    "I",
+    "L",
+    "X",
+    "unsigned"
+  ],
+  "datasets": [
+    "thermomut"
+  ],
+  "defaults": {
+    "temperature": 25.0,
+    "ph": 7.0,
+    "measurement_type": "thermal_stability",
+    "chain": "A",
+    "dataset": "thermomut"
+  },
+  "xgb_feature_count": 73,
+  "structural_features": [
+    "structure_size",
+    "contact_density",
+    "mean_degree",
+    "max_degree",
+    "mutation_degree"
+  ],
+  "notes": "Categorical vocabularies exported from df_all_skempi_thermomut_with_split.csv using the exact notebook sorting logic."
+}
