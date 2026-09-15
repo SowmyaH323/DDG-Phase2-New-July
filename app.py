@@ -73,7 +73,7 @@ def show_single_result(result: dict) -> None:
 
     c1, c2 = st.columns(2)
     c1.metric("Classification", result["ddg_class"])
-    c2.metric("Confidence", result.get("confidence", "Not assigned"))
+    c2.metric("Model Agreement", result.get("confidence", "Not assigned"))
 
     if result.get("cnn_error"):
         st.warning(f"CNN unavailable for this input: {result['cnn_error']}")
