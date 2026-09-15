@@ -218,7 +218,14 @@ with pdb_tab:
                 dataset=dataset,
             )
             df = prioritize_scan(df)
-            st.dataframe(df, use_container_width=True, hide_index=True)
+            st.dataframe(
+    df,
+    use_container_width=True,
+    hide_index=True,
+    column_config={
+        "confidence": "Model agreement",
+    },
+)
             st.download_button(
                 "Download scan CSV",
                 df.to_csv(index=False).encode("utf-8"),
@@ -295,7 +302,14 @@ with fasta_tab:
                 dataset=dataset,
             )
             df = prioritize_scan(df)
-            st.dataframe(df, use_container_width=True, hide_index=True)
+            st.dataframe(
+    df,
+    use_container_width=True,
+    hide_index=True,
+    column_config={
+        "confidence": "Model agreement",
+    },
+)
             st.download_button(
                 "Download scan CSV",
                 df.to_csv(index=False).encode("utf-8"),
