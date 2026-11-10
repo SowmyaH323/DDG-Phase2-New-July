@@ -21,6 +21,7 @@ ARTIFACTS_DIR = APP_DIR / "artifacts"
 METADATA_PATH = APP_DIR / "phase2_metadata.json"
 
 st.set_page_config(page_title="Phase-2 ΔΔG Predictor", page_icon="🧬", layout="wide")
+st.write("Streamlit version:", st.__version__)
 
 
 @st.cache_resource(show_spinner="Loading trained models…")
